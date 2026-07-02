@@ -4,6 +4,8 @@
 
 Sistema de Business Intelligence que transforma datos operativos de gestión de proyectos en scores de madurez P3M3, eliminando la dependencia de cuestionarios subjetivos. El sistema produce un score global de madurez calculado automáticamente y lo visualiza en un dashboard interactivo de cinco páginas analíticas.
 
+> **No es necesario realizar ningún despliegue para usar el dashboard:** el archivo `.pbix` incluye los datos simulados embebidos y se abre directamente con Power BI Desktop. El despliegue de la base de datos (ver [Instrucciones de despliegue](#instrucciones-de-despliegue)) solo es necesario si quieres reconectar el modelo a tu propia instancia de PostgreSQL para trabajar con datos reales.
+
 ---
 
 ## Componentes del sistema
@@ -12,7 +14,7 @@ Sistema de Business Intelligence que transforma datos operativos de gestión de 
 |---|---|
 | `02_schema_postgresql.sql` | Crea el esquema de la base de datos: 7 tablas de dimensión, 7 tablas de hechos, 3 vistas analíticas e índices de rendimiento. |
 | `03_datos_simulados.sql` | Puebla la base de datos con el dataset simulado: 10 proyectos, 12 meses de datos (enero–diciembre 2024) y 23 KPIs P3M3. |
-| `CM_Medicion_Madurez_PMO.pbix` | Dashboard de Power BI con 5 páginas analíticas y 9 medidas DAX. Los datos están embebidos en modo Import: **solo se necesita Power BI Desktop para abrirlo**. |
+| `CM_Medicion_Madurez_PMO.pbix` | Dashboard de Power BI con 5 páginas analíticas y 9 medidas DAX, con los datos simulados embebidos en modo Import. |
 
 ---
 
@@ -57,11 +59,9 @@ SELECT * FROM v_score_global_pmo ORDER BY anio, mes;
 -- Debe devolver 12 filas (enero–diciembre 2024) con Score Global ≈ 3,53 en diciembre.
 ```
 
-### 4 — Abrir el dashboard
+### 4 — Reconectar el dashboard a tu base de datos
 
-El archivo `CM_Medicion_Madurez_PMO.pbix` **funciona directamente sin necesidad de conectar a PostgreSQL**: los datos están embebidos en modo Import. Ábrelo con Power BI Desktop y el dashboard estará operativo.
-
-Si quieres reconectar el modelo a tu propia instancia de PostgreSQL para trabajar con datos reales, ve a **Inicio → Transformar datos → Configuración del origen de datos** y actualiza los parámetros de conexión:
+Abre `CM_Medicion_Madurez_PMO.pbix` con Power BI Desktop, ve a **Inicio → Transformar datos → Configuración del origen de datos** y actualiza los parámetros de conexión:
 
 | Parámetro | Valor |
 |---|---|
