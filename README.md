@@ -110,5 +110,3 @@ El dataset simulado produce un **score global de madurez de 3,03 sobre 5** (medi
 - Power BI Desktop
 
 ---
-
-*Trabajo de Fin de Grado · Grado en Ingeniería Informática · Universidad Nebrija · Julio 2026*
