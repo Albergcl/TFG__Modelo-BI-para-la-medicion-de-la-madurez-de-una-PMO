@@ -105,10 +105,10 @@ El dataset simulado produce un **score global de madurez de 3,03 sobre 5** (medi
 
 ## Tecnologías utilizadas
 
-![PostgreSQL 17]
-![Power BI Desktop]
-
+- PostgreSQL 17
+- pgAdmin4
+- Power BI Desktop
 
 ---
 
-*Trabajo de Fin de Grado · Grado en Ingeniería Informática · Universidad Nebrija · Junio 2026*
+*Trabajo de Fin de Grado · Grado en Ingeniería Informática · Universidad Nebrija · Julio 2026*
