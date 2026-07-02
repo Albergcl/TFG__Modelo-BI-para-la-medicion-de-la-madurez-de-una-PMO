@@ -105,9 +105,9 @@ El dataset simulado produce un **score global de madurez de 3,03 sobre 5** (medi
 
 ## Tecnologías utilizadas
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-336791?logo=postgresql&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-F2C811?logo=powerbi&logoColor=black)
-![License](https://img.shields.io/badge/Licencia-Académica-lightgrey)
+![PostgreSQL 17]
+![Power BI Desktop]
+
 
 ---
 
