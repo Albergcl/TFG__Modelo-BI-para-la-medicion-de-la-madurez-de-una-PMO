@@ -36,7 +36,7 @@ En el Query Tool de pgAdmin, sobre la base de datos `pmo_bi`, ejecuta el primer 
 
 ```sql
 -- Ejecutar primero
-\i 02_schema_postgresql.sql
+02_schema_postgresql.sql
 ```
 
 Esto crea las 14 tablas, las 3 vistas analíticas y los índices de rendimiento. Si la ejecución finaliza sin errores, la estructura está lista.
@@ -47,7 +47,7 @@ A continuación, ejecuta el segundo script en el mismo Query Tool:
 
 ```sql
 -- Ejecutar en segundo lugar
-\i 03_datos_simulados.sql
+03_datos_simulados.sql
 ```
 
 Para verificar que la carga fue correcta:
